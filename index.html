@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Animation button</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="button__wrapper">
+      <button></button>
+      <div class="button__label">
+        HOME
+      </div>
+    </div>
+    <div class="button__wrapper">
+      <button></button>
+      <div class="button__label">
+        ABOUT
+      </div>
+    </div>
+    <div class="button__wrapper">
+      <button></button>
+      <div class="button__label">
+        CONTACT
+      </div>
+    </div>
+    <div class="button__wrapper">
+      <button></button>
+      <div class="button__label">
+        WORK
+      </div>
+    </div>
+  </div>
+  <svg>
+    <defs>
+      <filter id='shake0'>
+        <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" seed="0" />
+        <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="7" />
+      </filter>
+      <filter id='shake1'>
+        <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" seed="1" />
+        <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="5" />
+      </filter>
+      <filter id='shake2'>
+        <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" seed="2" />
+        <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="8" />
+      </filter>
+      <filter id='shake3'>
+        <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" seed="3" />
+        <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="6" />
+      </filter>
+      <filter id='shake4'>
+        <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" seed="4" />
+        <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="9" />
+      </filter>
+    </defs>
+  </svg>
+</body>
+
+</html>
